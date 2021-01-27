@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyTools", "TinyTools.csproj", "{941AFEB4-1FD6-41E1-AEF4-F118AE8BD332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyToolsTester", "TinyToolsTester\TinyToolsTester.csproj", "{E9E5B6C3-0BB3-4F2F-886D-387F155F2D06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{941AFEB4-1FD6-41E1-AEF4-F118AE8BD332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{941AFEB4-1FD6-41E1-AEF4-F118AE8BD332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{941AFEB4-1FD6-41E1-AEF4-F118AE8BD332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{941AFEB4-1FD6-41E1-AEF4-F118AE8BD332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9E5B6C3-0BB3-4F2F-886D-387F155F2D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9E5B6C3-0BB3-4F2F-886D-387F155F2D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9E5B6C3-0BB3-4F2F-886D-387F155F2D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9E5B6C3-0BB3-4F2F-886D-387F155F2D06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20F0D367-4C87-4B79-8302-F3E672C7D9E9}
+	EndGlobalSection
+EndGlobal
