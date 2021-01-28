@@ -34,7 +34,14 @@ namespace TinyTools.FirmwareFlashersTinyTool
 
             Icon = null;
 
-            ToolMenu = null;
+            ToolMenu = new ToolStripMenuItem(Title);
+            ToolMenu.DropDownItems.Add(new ToolStripMenuItem(FirmwareFlashersResources.Menu_About, null, new EventHandler(this.OnMenuAbout)));
+        }
+
+        private void OnMenuAbout(object sender, EventArgs e)
+        {
+            FirmwareFlashersTinyToolAboutBox frm = new FirmwareFlashersTinyToolAboutBox();
+            frm.ShowDialog(this);
         }
 
         private void FirmwareFlashersTinyTool_Load(object sender, EventArgs e)

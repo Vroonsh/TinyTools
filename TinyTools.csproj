@@ -64,6 +64,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FirmwareFlashersResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="FirmwareFlashersTinyTool\FirmwareFlashersTinyToolAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirmwareFlashersTinyTool\FirmwareFlashersTinyToolAboutBox.Designer.cs">
+      <DependentUpon>FirmwareFlashersTinyToolAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="TinyToolUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +105,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>FirmwareFlashersResources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirmwareFlashersTinyTool\FirmwareFlashersTinyToolAboutBox.resx">
+      <DependentUpon>FirmwareFlashersTinyToolAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="TinyToolUserControl.resx">
       <DependentUpon>TinyToolUserControl.cs</DependentUpon>

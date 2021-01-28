@@ -61,6 +61,21 @@ namespace TinyTools.FirmwareFlashersTinyTool {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to With this tool you can flash firmwares for both Teensy &amp; Wemos hardwares.
+        ///These firmware are used with DirectOutput to trigger adressable leds effects.
+        ///
+        ///Thsi tool is using two CLI flashers for both Teensy &amp; Wemos.
+        ///https://github.com/espressif/esptool
+        ///https://github.com/PaulStoffregen/teensy_loader_cli
+        ///.
+        /// </summary>
+        internal static string About_Description {
+            get {
+                return ResourceManager.GetString("About.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You&apos;ll have to copy this modified DirectOutput.DLL to your DirectOutput directory to match these Wemos firmwares.
         ///Don&apos;t do a copy of the previous one and redo a RegisterDirectOutputComObject.
         ///This DLL is based on the last version of Mrj R3++ unified version..
@@ -77,6 +92,15 @@ namespace TinyTools.FirmwareFlashersTinyTool {
         internal static string DirectOutput_Title {
             get {
                 return ResourceManager.GetString("DirectOutput.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string Menu_About {
+            get {
+                return ResourceManager.GetString("Menu.About", resourceCulture);
             }
         }
         
