@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace TinyTools
 {
@@ -16,10 +17,15 @@ namespace TinyTools
 
         public Icon Icon { get; protected set; } = null;
 
-        public MenuStrip ToolMenu { get; protected set; } = null;
+        public ToolStripMenuItem ToolMenu { get; protected set; } = null;
         public TinyToolUserControl()
         {
             InitializeComponent();
         }
+
+        public virtual void UpdateCulture(CultureInfo culture, CultureInfo uiCulture)
+        {
+        }
+
     }
 }

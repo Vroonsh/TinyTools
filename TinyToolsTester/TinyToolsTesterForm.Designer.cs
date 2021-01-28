@@ -48,7 +48,7 @@ namespace TinyToolsTester
             this.toolStripSeparator1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1126, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1036, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -74,6 +74,7 @@ namespace TinyToolsTester
             // 
             this.toolStripComboBoxLanguage.Name = "toolStripComboBoxLanguage";
             this.toolStripComboBoxLanguage.Size = new System.Drawing.Size(100, 25);
+            this.toolStripComboBoxLanguage.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBoxLanguage_SelectedIndexChanged);
             // 
             // toolStripSeparator1
             // 
@@ -82,17 +83,19 @@ namespace TinyToolsTester
             // 
             // panelTinyTool
             // 
+            this.panelTinyTool.AutoSize = true;
+            this.panelTinyTool.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelTinyTool.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTinyTool.Location = new System.Drawing.Point(0, 25);
             this.panelTinyTool.Name = "panelTinyTool";
-            this.panelTinyTool.Size = new System.Drawing.Size(1126, 686);
+            this.panelTinyTool.Size = new System.Drawing.Size(1036, 622);
             this.panelTinyTool.TabIndex = 1;
             // 
             // TinyToolsTesterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1126, 711);
+            this.ClientSize = new System.Drawing.Size(1036, 647);
             this.Controls.Add(this.panelTinyTool);
             this.Controls.Add(this.toolStrip1);
             this.Name = "TinyToolsTesterForm";

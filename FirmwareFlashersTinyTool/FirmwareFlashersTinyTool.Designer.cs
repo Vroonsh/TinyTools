@@ -29,6 +29,10 @@ namespace TinyTools.FirmwareFlashersTinyTool
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FirmwareFlashersTinyTool));
+            this.backgroundWorkerComPorts = new System.ComponentModel.BackgroundWorker();
+            this.pictureBoxCard = new System.Windows.Forms.PictureBox();
+            this.comboBoxCards = new System.Windows.Forms.ComboBox();
+            this.labelCardType = new System.Windows.Forms.Label();
             this.panelFirmwareTeensy = new System.Windows.Forms.Panel();
             this.labelTeensyCardModel = new System.Windows.Forms.Label();
             this.comboBoxTeensyCardModels = new System.Windows.Forms.ComboBox();
@@ -37,6 +41,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
             this.labelTeensySelectFirmware = new System.Windows.Forms.Label();
             this.textBoxTeensyFirmware = new System.Windows.Forms.TextBox();
             this.panelFirmwareWemos = new System.Windows.Forms.Panel();
+            this.buttonDirectOutput = new System.Windows.Forms.Button();
             this.buttonResetWemos = new System.Windows.Forms.Button();
             this.labelWemosComPort = new System.Windows.Forms.Label();
             this.buttonWemosFlashFirmware = new System.Windows.Forms.Button();
@@ -44,14 +49,34 @@ namespace TinyTools.FirmwareFlashersTinyTool
             this.buttonSelectWemosFirmware = new System.Windows.Forms.Button();
             this.labelWemosSelectFirmware = new System.Windows.Forms.Label();
             this.textBoxWemosFirmwareName = new System.Windows.Forms.TextBox();
-            this.pictureBoxCard = new System.Windows.Forms.PictureBox();
-            this.labelCardType = new System.Windows.Forms.Label();
-            this.comboBoxCards = new System.Windows.Forms.ComboBox();
-            this.backgroundWorkerComPorts = new System.ComponentModel.BackgroundWorker();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCard)).BeginInit();
             this.panelFirmwareTeensy.SuspendLayout();
             this.panelFirmwareWemos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCard)).BeginInit();
             this.SuspendLayout();
+            // 
+            // backgroundWorkerComPorts
+            // 
+            this.backgroundWorkerComPorts.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerComPorts_DoWork);
+            // 
+            // pictureBoxCard
+            // 
+            resources.ApplyResources(this.pictureBoxCard, "pictureBoxCard");
+            this.pictureBoxCard.BackColor = System.Drawing.SystemColors.MenuText;
+            this.pictureBoxCard.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxCard.Name = "pictureBoxCard";
+            this.pictureBoxCard.TabStop = false;
+            // 
+            // comboBoxCards
+            // 
+            this.comboBoxCards.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxCards, "comboBoxCards");
+            this.comboBoxCards.Name = "comboBoxCards";
+            this.comboBoxCards.SelectedIndexChanged += new System.EventHandler(this.comboBoxCards_SelectedIndexChanged);
+            // 
+            // labelCardType
+            // 
+            resources.ApplyResources(this.labelCardType, "labelCardType");
+            this.labelCardType.Name = "labelCardType";
             // 
             // panelFirmwareTeensy
             // 
@@ -100,10 +125,12 @@ namespace TinyTools.FirmwareFlashersTinyTool
             // 
             resources.ApplyResources(this.textBoxTeensyFirmware, "textBoxTeensyFirmware");
             this.textBoxTeensyFirmware.Name = "textBoxTeensyFirmware";
+            this.textBoxTeensyFirmware.TextChanged += new System.EventHandler(this.textBoxTeensyFirmware_TextChanged);
             // 
             // panelFirmwareWemos
             // 
             resources.ApplyResources(this.panelFirmwareWemos, "panelFirmwareWemos");
+            this.panelFirmwareWemos.Controls.Add(this.buttonDirectOutput);
             this.panelFirmwareWemos.Controls.Add(this.buttonResetWemos);
             this.panelFirmwareWemos.Controls.Add(this.labelWemosComPort);
             this.panelFirmwareWemos.Controls.Add(this.buttonWemosFlashFirmware);
@@ -113,6 +140,13 @@ namespace TinyTools.FirmwareFlashersTinyTool
             this.panelFirmwareWemos.Controls.Add(this.textBoxWemosFirmwareName);
             this.panelFirmwareWemos.Name = "panelFirmwareWemos";
             this.panelFirmwareWemos.VisibleChanged += new System.EventHandler(this.panelFirmwareWemos_VisibleChanged);
+            // 
+            // buttonDirectOutput
+            // 
+            resources.ApplyResources(this.buttonDirectOutput, "buttonDirectOutput");
+            this.buttonDirectOutput.Name = "buttonDirectOutput";
+            this.buttonDirectOutput.UseVisualStyleBackColor = true;
+            this.buttonDirectOutput.Click += new System.EventHandler(this.buttonDirectOutput_Click);
             // 
             // buttonResetWemos
             // 
@@ -156,46 +190,24 @@ namespace TinyTools.FirmwareFlashersTinyTool
             // 
             resources.ApplyResources(this.textBoxWemosFirmwareName, "textBoxWemosFirmwareName");
             this.textBoxWemosFirmwareName.Name = "textBoxWemosFirmwareName";
-            // 
-            // pictureBoxCard
-            // 
-            resources.ApplyResources(this.pictureBoxCard, "pictureBoxCard");
-            this.pictureBoxCard.BackColor = System.Drawing.SystemColors.MenuText;
-            this.pictureBoxCard.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxCard.Name = "pictureBoxCard";
-            this.pictureBoxCard.TabStop = false;
-            // 
-            // labelCardType
-            // 
-            resources.ApplyResources(this.labelCardType, "labelCardType");
-            this.labelCardType.Name = "labelCardType";
-            // 
-            // comboBoxCards
-            // 
-            this.comboBoxCards.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxCards, "comboBoxCards");
-            this.comboBoxCards.Name = "comboBoxCards";
-            this.comboBoxCards.SelectedIndexChanged += new System.EventHandler(this.comboBoxCards_SelectedIndexChanged);
-            // 
-            // backgroundWorkerComPorts
-            // 
-            this.backgroundWorkerComPorts.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerComPorts_DoWork);
+            this.textBoxWemosFirmwareName.TextChanged += new System.EventHandler(this.textBoxWemosFirmwareName_TextChanged);
             // 
             // FirmwareFlashersTinyTool
             // 
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.panelFirmwareTeensy);
             this.Controls.Add(this.panelFirmwareWemos);
+            this.Controls.Add(this.panelFirmwareTeensy);
             this.Controls.Add(this.pictureBoxCard);
-            this.Controls.Add(this.labelCardType);
             this.Controls.Add(this.comboBoxCards);
+            this.Controls.Add(this.labelCardType);
             this.Name = "FirmwareFlashersTinyTool";
             this.Load += new System.EventHandler(this.FirmwareFlashersTinyTool_Load);
+            this.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.FirmwareFlashersTinyTool_ControlRemoved);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCard)).EndInit();
             this.panelFirmwareTeensy.ResumeLayout(false);
             this.panelFirmwareTeensy.PerformLayout();
             this.panelFirmwareWemos.ResumeLayout(false);
             this.panelFirmwareWemos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCard)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,5 +234,6 @@ namespace TinyTools.FirmwareFlashersTinyTool
         private System.ComponentModel.BackgroundWorker backgroundWorkerComPorts;
         private System.Windows.Forms.Label labelTeensyCardModel;
         private System.Windows.Forms.ComboBox comboBoxTeensyCardModels;
+        private System.Windows.Forms.Button buttonDirectOutput;
     }
 }

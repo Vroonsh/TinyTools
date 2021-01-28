@@ -42,6 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmptyTinyTool\EmptyTinyTool.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmptyTinyTool\EmptyTinyTool.Designer.cs">
+      <DependentUpon>EmptyTinyTool.cs</DependentUpon>
+    </Compile>
     <Compile Include="FirmwareFlashersTinyTool\FirmwareFlashersResources.fr.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -53,10 +59,10 @@
     <Compile Include="FirmwareFlashersTinyTool\FirmwareFlashersTinyTool.Designer.cs">
       <DependentUpon>FirmwareFlashersTinyTool.cs</DependentUpon>
     </Compile>
-    <Compile Include="FirmwareFlashersTinyTool\FirmwareFlashersResource.Designer.cs">
+    <Compile Include="FirmwareFlashersTinyTool\FirmwareFlashersResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>FirmwareFlashersResource.resx</DependentUpon>
+      <DependentUpon>FirmwareFlashersResources.resx</DependentUpon>
     </Compile>
     <Compile Include="TinyToolUserControl.cs">
       <SubType>UserControl</SubType>
@@ -68,35 +74,36 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="EmptyTinyTool\EmptyTinyTool.fr.resx">
+      <DependentUpon>EmptyTinyTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmptyTinyTool\EmptyTinyTool.resx">
+      <DependentUpon>EmptyTinyTool.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FirmwareFlashersTinyTool\FirmwareFlashersResources.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>FirmwareFlashersResources.fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="FirmwareFlashersTinyTool\FirmwareFlashersTinyTool.fr.resx">
+      <DependentUpon>FirmwareFlashersTinyTool.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FirmwareFlashersTinyTool\FirmwareFlashersTinyTool.resx">
       <DependentUpon>FirmwareFlashersTinyTool.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FirmwareFlashersTinyTool\FirmwareFlashersResource.resx">
+    <EmbeddedResource Include="FirmwareFlashersTinyTool\FirmwareFlashersResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>FirmwareFlashersResource.Designer.cs</LastGenOutput>
+      <LastGenOutput>FirmwareFlashersResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="TinyToolUserControl.resx">
       <DependentUpon>TinyToolUserControl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Content Include="FirmwareFlashersTinyTool\wemos\images\wemosd1minipro.png" />
-    <None Include="FirmwareFlashersTinyTool\teensy\images\teensy40.png" />
-    <None Include="FirmwareFlashersTinyTool\teensy\images\teensy32.png" />
-    <Content Include="FirmwareFlashersTinyTool\teensy\teensy_loader_cli.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="FirmwareFlashersTinyTool\wemos\esptool.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="FirmwareFlashersTinyTool\teensy\firmwares\" />
-    <Folder Include="FirmwareFlashersTinyTool\wemos\firmwares\" />
+    <Content Include="FirmwareFlashersTinyTool\images\teensy32.png" />
+    <Content Include="FirmwareFlashersTinyTool\images\teensy40.png" />
+    <Content Include="FirmwareFlashersTinyTool\images\wemosd1minipro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

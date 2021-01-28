@@ -22,14 +22,14 @@ namespace TinyTools.FirmwareFlashersTinyTool {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class FirmwareFlashersResource {
+    internal class FirmwareFlashersResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal FirmwareFlashersResource() {
+        internal FirmwareFlashersResources() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace TinyTools.FirmwareFlashersTinyTool {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TinyTools.FirmwareFlashersTinyTool.FirmwareFlashersResource", typeof(FirmwareFlashersResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TinyTools.FirmwareFlashersTinyTool.FirmwareFlashersResources", typeof(FirmwareFlashersResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,26 @@ namespace TinyTools.FirmwareFlashersTinyTool {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You&apos;ll have to copy this modified DirectOutput.DLL to your DirectOutput directory to match these Wemos firmwares.
+        ///Don&apos;t do a copy of the previous one and redo a RegisterDirectOutputComObject.
+        ///This DLL is based on the last version of Mrj R3++ unified version..
+        /// </summary>
+        internal static string DirectOutput_Message {
+            get {
+                return ResourceManager.GetString("DirectOutput.Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modified DirectOutput.DLL.
+        /// </summary>
+        internal static string DirectOutput_Title {
+            get {
+                return ResourceManager.GetString("DirectOutput.Title", resourceCulture);
             }
         }
         

@@ -117,21 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DirectOutput.Message" xml:space="preserve">
-    <value>Vous allez devoir copier cette DLL modifiée dans votre répertoire DirectOutput pour faire fonctionner le Dof avec ces firmwares.
-Ne faites pas une copie de l'ancienne version et refaite bien le RegisterDirectOutputComObject.
-Cette DLL est basée sur la dernière version de DirectOutput Mjr R3++ Unified version.</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>454, 26</value>
   </data>
-  <data name="DirectOutput.Title" xml:space="preserve">
-    <value>DirectOutput.DLL modifiée</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Ceci est un TinyTool vide avec un label traduit</value>
   </data>
-  <data name="OpenFile.TeensyFirmware" xml:space="preserve">
-    <value>Sélectionnez un firmware Teensy</value>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 327</value>
   </data>
-  <data name="OpenFile.WemosFirmware" xml:space="preserve">
-    <value>Sélectionnez un firmware Wemos</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Flashers de firmware</value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 327</value>
   </data>
 </root>

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.IO.Ports;
 using System.Linq;
@@ -27,7 +28,9 @@ namespace TinyTools.FirmwareFlashersTinyTool
         {
             InitializeComponent();
 
-            Title = FirmwareFlashersResource.Title;
+            UpdateCulture(Thread.CurrentThread.CurrentCulture, Thread.CurrentThread.CurrentUICulture);
+
+            Title = FirmwareFlashersResources.Title;
 
             Icon = null;
 
@@ -44,19 +47,35 @@ namespace TinyTools.FirmwareFlashersTinyTool
             UpdateCurrentCardType();
         }
 
+        private void FirmwareFlashersTinyTool_ControlRemoved(object sender, ControlEventArgs e)
+        {
+            if (backgroundWorkerComPorts.IsBusy) {
+                backgroundWorkerComPorts.CancelAsync();
+                while (backgroundWorkerComPorts.CancellationPending) {
+                    Application.DoEvents();
+                }
+            }
+        }
+
+        public override void UpdateCulture(CultureInfo culture, CultureInfo uiCulture)
+        {
+            base.UpdateCulture(culture, uiCulture);
+            FirmwareFlashersResources.Culture = culture;
+        }
+
         private void UpdateCurrentCardType()
         {
             CurrentCardType = (CardTypeEnum)comboBoxCards.SelectedItem;
 
             switch (CurrentCardType) {
                 case CardTypeEnum.Teensy: {
-                    pictureBoxCard.Image = FirmwareFlashersResource.Teensy40;
+                    pictureBoxCard.Image = FirmwareFlashersResources.Teensy40;
                     panelFirmwareTeensy.Visible = true;
                     panelFirmwareWemos.Visible = false;
                     break;
                 }
                 case CardTypeEnum.Wemos: {
-                    pictureBoxCard.Image = FirmwareFlashersResource.Wemos;
+                    pictureBoxCard.Image = FirmwareFlashersResources.Wemos;
                     panelFirmwareTeensy.Visible = false;
                     panelFirmwareWemos.Visible = true;
                     break;
@@ -186,7 +205,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
             OpenFileDialog fd = new OpenFileDialog() {
                 DefaultExt = "bin",
                 Filter = "Wemos firmware files|*.bin",
-                Title = FirmwareFlashersResource.OpenFile_WemosFirmware,
+                Title = FirmwareFlashersResources.OpenFile_WemosFirmware,
                 InitialDirectory = Path.Combine(Application.StartupPath, "wemos\\firmwares")
             };
 
@@ -199,6 +218,13 @@ namespace TinyTools.FirmwareFlashersTinyTool
         {
             UpdateWemosButtonState();
         }
+
+        private void buttonDirectOutput_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(FirmwareFlashersResources.DirectOutput_Message, FirmwareFlashersResources.DirectOutput_Title);
+            Process.Start("explorer.exe", Path.Combine(Application.StartupPath, "wemos\\modified directoutput"));
+        }
+
         #endregion
 
         #region Teensy Panel
@@ -225,9 +251,9 @@ namespace TinyTools.FirmwareFlashersTinyTool
             }
             CurrentTeensyModel = (TeensyModelEnum)comboBoxTeensyCardModels.SelectedItem;
             if (CurrentTeensyModel >= TeensyModelEnum.TEENSY40) {
-                pictureBoxCard.Image = FirmwareFlashersResource.Teensy40;
+                pictureBoxCard.Image = FirmwareFlashersResources.Teensy40;
             } else {
-                pictureBoxCard.Image = FirmwareFlashersResource.Teensy32;
+                pictureBoxCard.Image = FirmwareFlashersResources.Teensy32;
             }
             UpdateTeensyButtonState();
         }
@@ -237,7 +263,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
             OpenFileDialog fd = new OpenFileDialog() {
                 DefaultExt = "hex",
                 Filter = "Teensy firmware files|*.hex",
-                Title = FirmwareFlashersResource.OpenFile_TeensyFirmware,
+                Title = FirmwareFlashersResources.OpenFile_TeensyFirmware,
                 InitialDirectory = Path.Combine(Application.StartupPath, "teensy\\firmwares")
             };
 
@@ -250,6 +276,11 @@ namespace TinyTools.FirmwareFlashersTinyTool
         private void UpdateTeensyButtonState()
         {
             buttonTeensyUpload.Enabled = textBoxTeensyFirmware.Text != string.Empty;
+        }
+
+        private void textBoxTeensyFirmware_TextChanged(object sender, EventArgs e)
+        {
+            UpdateTeensyButtonState();
         }
 
         private void buttonTeensyUpload_Click(object sender, EventArgs e)
