@@ -172,6 +172,9 @@ namespace TinyTools.FirmwareFlashersTinyTool
                     while (!esptoolProcess.HasExited) {
                         Thread.Sleep(100);
                     }
+                    if (esptoolProcess.ExitCode != 0) {
+                        MessageBox.Show(FirmwareFlashersResources.FlashError_Message, FirmwareFlashersResources.FlashError_Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 } catch {
                 }
             }
@@ -186,7 +189,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
             var esptoolProcess = new Process() {
                 StartInfo = new ProcessStartInfo() {
                     FileName = Path.Combine(Application.StartupPath, "wemos\\esptool.exe"),
-                    Arguments = $"-cp {comboBoxWemosCards.Text} -cd nodemcu -cb 921600 -cf {textBoxWemosFirmwareName.Text}"
+                    Arguments = $"-cp {comboBoxWemosCards.Text} -cd nodemcu -cb 921600 -cf \"{textBoxWemosFirmwareName.Text}\""
                 }
             };
 
@@ -198,6 +201,9 @@ namespace TinyTools.FirmwareFlashersTinyTool
                     esptoolProcess.Start();
                     while (!esptoolProcess.HasExited) {
                         Thread.Sleep(100);
+                    }
+                    if (esptoolProcess.ExitCode != 0) {
+                        MessageBox.Show(FirmwareFlashersResources.FlashError_Message, FirmwareFlashersResources.FlashError_Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 } catch {
                 }
@@ -295,7 +301,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
             var teensyProcess = new Process() {
                 StartInfo = new ProcessStartInfo() {
                     FileName = Path.Combine(Application.StartupPath, "teensy\\teensy_loader_cli.exe"),
-                    Arguments = $"--mcu={CurrentTeensyModel} -w {textBoxTeensyFirmware.Text} -v"
+                    Arguments = $"--mcu={CurrentTeensyModel} -w \"{textBoxTeensyFirmware.Text}\" -v"
                 }
             };
 
@@ -306,6 +312,9 @@ namespace TinyTools.FirmwareFlashersTinyTool
                     teensyProcess.Start();
                     while (!teensyProcess.HasExited) {
                         Thread.Sleep(100);
+                    }
+                    if (teensyProcess.ExitCode != 0) {
+                        MessageBox.Show(FirmwareFlashersResources.FlashError_Message, FirmwareFlashersResources.FlashError_Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 } catch {
                 }

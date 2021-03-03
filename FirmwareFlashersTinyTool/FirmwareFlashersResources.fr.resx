@@ -125,6 +125,12 @@ Cette DLL est basée sur la dernière version de DirectOutput Mjr R3++ Unified v
   <data name="DirectOutput.Title" xml:space="preserve">
     <value>DirectOutput.DLL modifiée</value>
   </data>
+  <data name="FlashError.Message" xml:space="preserve">
+    <value>Il y a eu un problême au moment de flasher votre carte, réessayez.</value>
+  </data>
+  <data name="FlashError.Title" xml:space="preserve">
+    <value>Problème flash de carte</value>
+  </data>
   <data name="Menu.About" xml:space="preserve">
     <value>A propos...</value>
   </data>

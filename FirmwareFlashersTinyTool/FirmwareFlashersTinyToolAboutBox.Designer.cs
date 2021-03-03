@@ -53,9 +53,9 @@ namespace TinyTools.FirmwareFlashersTinyTool
             // 
             // richTextBox1
             // 
+            resources.ApplyResources(this.richTextBox1, "richTextBox1");
             this.richTextBox1.BackColor = System.Drawing.SystemColors.Control;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.richTextBox1, "richTextBox1");
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.richTextBox1_LinkClicked);

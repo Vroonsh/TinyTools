@@ -96,6 +96,24 @@ namespace TinyTools.FirmwareFlashersTinyTool {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Something was wrong while flashing your card, please try again.
+        /// </summary>
+        internal static string FlashError_Message {
+            get {
+                return ResourceManager.GetString("FlashError.Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Card flash failed.
+        /// </summary>
+        internal static string FlashError_Title {
+            get {
+                return ResourceManager.GetString("FlashError.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to About.
         /// </summary>
         internal static string Menu_About {
