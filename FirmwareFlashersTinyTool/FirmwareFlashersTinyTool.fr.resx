@@ -151,6 +151,9 @@
   <data name="labelTeensySelectFirmware.Text" xml:space="preserve">
     <value>Sélectionez un firmware</value>
   </data>
+  <data name="buttonWemosDrivers.Text" xml:space="preserve">
+    <value>Pilotes Windows</value>
+  </data>
   <data name="buttonDirectOutput.Text" xml:space="preserve">
     <value>DirectOutput.DLL modifiée</value>
   </data>

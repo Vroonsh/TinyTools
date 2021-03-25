@@ -238,6 +238,11 @@ namespace TinyTools.FirmwareFlashersTinyTool
             Process.Start("explorer.exe", Path.Combine(Application.StartupPath, "wemos\\modified directoutput"));
         }
 
+        private void buttonWemosDrivers_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", Path.Combine(Application.StartupPath, "wemos\\drivers"));
+        }
+
         #endregion
 
         #region Teensy Panel

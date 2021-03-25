@@ -117,206 +117,155 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="backgroundWorkerComPorts.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonWemosDrivers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 79</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBoxCard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
-  <data name="pictureBoxCard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="buttonSelectWemosFirmware.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBoxCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 24</value>
-  </data>
-  <data name="pictureBoxCard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 538</value>
-  </data>
-  <data name="pictureBoxCard.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="labelCardType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBoxCard.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;pictureBoxCard.Name" xml:space="preserve">
-    <value>pictureBoxCard</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxCard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxCard.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxCard.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="comboBoxCards.Location" type="System.Drawing.Point, System.Drawing">
-    <value>74, 0</value>
-  </data>
-  <data name="comboBoxCards.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 21</value>
-  </data>
-  <data name="comboBoxCards.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCards.Name" xml:space="preserve">
-    <value>comboBoxCards</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCards.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCards.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCards.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelCardType.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelCardType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelCardType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="labelCardType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 13</value>
-  </data>
-  <data name="labelCardType.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="labelCardType.Text" xml:space="preserve">
-    <value>Card type</value>
-  </data>
-  <data name="&gt;&gt;labelCardType.Name" xml:space="preserve">
-    <value>labelCardType</value>
-  </data>
-  <data name="&gt;&gt;labelCardType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelCardType.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelCardType.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="panelFirmwareTeensy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="labelTeensyCardModel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelTeensyCardModel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="labelTeensyCardModel.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 11</value>
   </data>
-  <data name="labelTeensyCardModel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 13</value>
-  </data>
-  <data name="labelTeensyCardModel.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="labelTeensyCardModel.Text" xml:space="preserve">
-    <value>Select a card model</value>
-  </data>
-  <data name="&gt;&gt;labelTeensyCardModel.Name" xml:space="preserve">
-    <value>labelTeensyCardModel</value>
-  </data>
-  <data name="&gt;&gt;labelTeensyCardModel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelTeensyCardModel.Parent" xml:space="preserve">
-    <value>panelFirmwareTeensy</value>
-  </data>
-  <data name="&gt;&gt;labelTeensyCardModel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="comboBoxTeensyCardModels.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="comboBoxTeensyCardModels.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 8</value>
-  </data>
-  <data name="comboBoxTeensyCardModels.Size" type="System.Drawing.Size, System.Drawing">
-    <value>519, 21</value>
-  </data>
-  <data name="comboBoxTeensyCardModels.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTeensyCardModels.Name" xml:space="preserve">
-    <value>comboBoxTeensyCardModels</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTeensyCardModels.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTeensyCardModels.Parent" xml:space="preserve">
-    <value>panelFirmwareTeensy</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTeensyCardModels.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="buttonTeensyUpload.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="buttonTeensyUpload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="pictureBoxCard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="buttonTeensyUpload.Location" type="System.Drawing.Point, System.Drawing">
-    <value>517, 64</value>
-  </data>
-  <data name="buttonTeensyUpload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 36</value>
-  </data>
-  <data name="buttonTeensyUpload.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="buttonTeensyUpload.Text" xml:space="preserve">
-    <value>Upload firmware</value>
-  </data>
-  <data name="&gt;&gt;buttonTeensyUpload.Name" xml:space="preserve">
-    <value>buttonTeensyUpload</value>
-  </data>
-  <data name="&gt;&gt;buttonTeensyUpload.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonTeensyUpload.Parent" xml:space="preserve">
-    <value>panelFirmwareTeensy</value>
-  </data>
-  <data name="&gt;&gt;buttonTeensyUpload.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="buttonSelectTeensyFirmware.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="buttonSelectTeensyFirmware.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="buttonSelectTeensyFirmware.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 34</value>
-  </data>
-  <data name="buttonSelectTeensyFirmware.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 23</value>
-  </data>
-  <data name="buttonSelectTeensyFirmware.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
   </data>
   <data name="buttonSelectTeensyFirmware.Text" xml:space="preserve">
     <value>...</value>
   </data>
-  <data name="&gt;&gt;buttonSelectTeensyFirmware.Name" xml:space="preserve">
-    <value>buttonSelectTeensyFirmware</value>
+  <data name="buttonResetWemos.Text" xml:space="preserve">
+    <value>Reset firmware</value>
   </data>
-  <data name="&gt;&gt;buttonSelectTeensyFirmware.Type" xml:space="preserve">
+  <data name="labelWemosSelectFirmware.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonWemosFlashFirmware.Parent" xml:space="preserve">
+    <value>panelFirmwareWemos</value>
+  </data>
+  <data name="&gt;&gt;textBoxTeensyFirmware.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;buttonResetWemos.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;buttonSelectTeensyFirmware.Parent" xml:space="preserve">
+  <data name="labelWemosSelectFirmware.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="buttonTeensyUpload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>517, 64</value>
+  </data>
+  <data name="&gt;&gt;textBoxWemosFirmwareName.Name" xml:space="preserve">
+    <value>textBoxWemosFirmwareName</value>
+  </data>
+  <data name="labelCardType.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelTeensyCardModel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelWemosComPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 11</value>
+  </data>
+  <data name="comboBoxCards.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 0</value>
+  </data>
+  <data name="&gt;&gt;buttonTeensyUpload.Name" xml:space="preserve">
+    <value>buttonTeensyUpload</value>
+  </data>
+  <data name="buttonDirectOutput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 79</value>
+  </data>
+  <data name="buttonResetWemos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 67</value>
+  </data>
+  <data name="labelWemosSelectFirmware.Text" xml:space="preserve">
+    <value>Select a firmware</value>
+  </data>
+  <data name="buttonSelectWemosFirmware.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelWemosComPort.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonResetWemos.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;buttonTeensyUpload.Parent" xml:space="preserve">
     <value>panelFirmwareTeensy</value>
+  </data>
+  <data name="&gt;&gt;buttonSelectWemosFirmware.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pictureBoxCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 538</value>
+  </data>
+  <data name="&gt;&gt;panelFirmwareTeensy.Name" xml:space="preserve">
+    <value>panelFirmwareTeensy</value>
+  </data>
+  <data name="labelWemosSelectFirmware.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="panelFirmwareWemos.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="buttonTeensyUpload.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;textBoxTeensyFirmware.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonWemosFlashFirmware.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 36</value>
+  </data>
+  <data name="buttonSelectTeensyFirmware.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;buttonWemosFlashFirmware.Name" xml:space="preserve">
+    <value>buttonWemosFlashFirmware</value>
+  </data>
+  <data name="&gt;&gt;labelTeensySelectFirmware.Name" xml:space="preserve">
+    <value>labelTeensySelectFirmware</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelWemosSelectFirmware.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="buttonWemosFlashFirmware.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;labelWemosComPort.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTeensyCardModels.Name" xml:space="preserve">
+    <value>comboBoxTeensyCardModels</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCards.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelTeensyCardModel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="buttonResetWemos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 36</value>
+  </data>
+  <data name="buttonSelectTeensyFirmware.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;buttonSelectTeensyFirmware.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -324,343 +273,418 @@
   <data name="labelTeensySelectFirmware.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="labelTeensySelectFirmware.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;buttonSelectWemosFirmware.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="labelTeensySelectFirmware.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 39</value>
-  </data>
-  <data name="labelTeensySelectFirmware.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 13</value>
-  </data>
-  <data name="labelTeensySelectFirmware.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="labelTeensySelectFirmware.Text" xml:space="preserve">
-    <value>Select a firmware</value>
-  </data>
-  <data name="&gt;&gt;labelTeensySelectFirmware.Name" xml:space="preserve">
-    <value>labelTeensySelectFirmware</value>
-  </data>
-  <data name="&gt;&gt;labelTeensySelectFirmware.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelTeensySelectFirmware.Parent" xml:space="preserve">
-    <value>panelFirmwareTeensy</value>
-  </data>
-  <data name="&gt;&gt;labelTeensySelectFirmware.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="textBoxTeensyFirmware.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="textBoxTeensyFirmware.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 36</value>
-  </data>
-  <data name="textBoxTeensyFirmware.Size" type="System.Drawing.Size, System.Drawing">
-    <value>489, 20</value>
-  </data>
-  <data name="textBoxTeensyFirmware.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;textBoxTeensyFirmware.Name" xml:space="preserve">
-    <value>textBoxTeensyFirmware</value>
-  </data>
-  <data name="&gt;&gt;textBoxTeensyFirmware.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="buttonSelectTeensyFirmware.Location" type="System.Drawing.Point, System.Drawing">
+    <value>629, 34</value>
   </data>
   <data name="&gt;&gt;textBoxTeensyFirmware.Parent" xml:space="preserve">
     <value>panelFirmwareTeensy</value>
   </data>
-  <data name="&gt;&gt;textBoxTeensyFirmware.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;buttonWemosDrivers.Name" xml:space="preserve">
+    <value>buttonWemosDrivers</value>
   </data>
-  <data name="panelFirmwareTeensy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 32</value>
+  <data name="textBoxTeensyFirmware.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 36</value>
   </data>
-  <data name="panelFirmwareTeensy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>671, 110</value>
+  <data name="&gt;&gt;pictureBoxCard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panelFirmwareTeensy.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;panelFirmwareTeensy.Name" xml:space="preserve">
-    <value>panelFirmwareTeensy</value>
-  </data>
-  <data name="&gt;&gt;panelFirmwareTeensy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelFirmwareTeensy.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelFirmwareTeensy.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panelFirmwareWemos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="buttonDirectOutput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 78</value>
-  </data>
-  <data name="buttonDirectOutput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 23</value>
-  </data>
-  <data name="buttonDirectOutput.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="buttonDirectOutput.Text" xml:space="preserve">
-    <value>Modified DirectOutput.DLL</value>
-  </data>
-  <data name="&gt;&gt;buttonDirectOutput.Name" xml:space="preserve">
-    <value>buttonDirectOutput</value>
-  </data>
-  <data name="&gt;&gt;buttonDirectOutput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonDirectOutput.Parent" xml:space="preserve">
-    <value>panelFirmwareWemos</value>
-  </data>
-  <data name="&gt;&gt;buttonDirectOutput.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonWemosDrivers.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="buttonResetWemos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="buttonResetWemos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="buttonResetWemos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 67</value>
-  </data>
-  <data name="buttonResetWemos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 36</value>
-  </data>
-  <data name="buttonResetWemos.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="buttonResetWemos.Text" xml:space="preserve">
-    <value>Reset firmware</value>
-  </data>
-  <data name="&gt;&gt;buttonResetWemos.Name" xml:space="preserve">
-    <value>buttonResetWemos</value>
-  </data>
-  <data name="&gt;&gt;buttonResetWemos.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonTeensyUpload.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonResetWemos.Parent" xml:space="preserve">
-    <value>panelFirmwareWemos</value>
-  </data>
-  <data name="&gt;&gt;buttonResetWemos.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="labelWemosComPort.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelWemosComPort.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelWemosComPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 11</value>
-  </data>
-  <data name="labelWemosComPort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 13</value>
-  </data>
-  <data name="labelWemosComPort.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="labelWemosComPort.Text" xml:space="preserve">
-    <value>Select a COM port</value>
-  </data>
-  <data name="&gt;&gt;labelWemosComPort.Name" xml:space="preserve">
-    <value>labelWemosComPort</value>
-  </data>
-  <data name="&gt;&gt;labelWemosComPort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelWemosComPort.Parent" xml:space="preserve">
-    <value>panelFirmwareWemos</value>
-  </data>
-  <data name="&gt;&gt;labelWemosComPort.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="buttonWemosFlashFirmware.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="buttonWemosFlashFirmware.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="buttonWemosFlashFirmware.Location" type="System.Drawing.Point, System.Drawing">
-    <value>520, 67</value>
-  </data>
-  <data name="buttonWemosFlashFirmware.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 36</value>
-  </data>
-  <data name="buttonWemosFlashFirmware.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="buttonWemosFlashFirmware.Text" xml:space="preserve">
-    <value>Upload firmware</value>
-  </data>
-  <data name="&gt;&gt;buttonWemosFlashFirmware.Name" xml:space="preserve">
-    <value>buttonWemosFlashFirmware</value>
-  </data>
-  <data name="&gt;&gt;buttonWemosFlashFirmware.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonWemosFlashFirmware.Parent" xml:space="preserve">
-    <value>panelFirmwareWemos</value>
-  </data>
-  <data name="&gt;&gt;buttonWemosFlashFirmware.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="comboBoxWemosCards.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="comboBoxWemosCards.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 8</value>
-  </data>
-  <data name="comboBoxWemosCards.Size" type="System.Drawing.Size, System.Drawing">
-    <value>552, 21</value>
-  </data>
-  <data name="comboBoxWemosCards.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;comboBoxWemosCards.Name" xml:space="preserve">
-    <value>comboBoxWemosCards</value>
-  </data>
-  <data name="&gt;&gt;comboBoxWemosCards.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxWemosCards.Parent" xml:space="preserve">
-    <value>panelFirmwareWemos</value>
-  </data>
-  <data name="&gt;&gt;comboBoxWemosCards.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="buttonSelectWemosFirmware.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="buttonSelectWemosFirmware.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="buttonSelectWemosFirmware.Location" type="System.Drawing.Point, System.Drawing">
-    <value>632, 39</value>
-  </data>
-  <data name="buttonSelectWemosFirmware.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 23</value>
-  </data>
-  <data name="buttonSelectWemosFirmware.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="buttonSelectWemosFirmware.Text" xml:space="preserve">
-    <value>...</value>
-  </data>
-  <data name="&gt;&gt;buttonSelectWemosFirmware.Name" xml:space="preserve">
-    <value>buttonSelectWemosFirmware</value>
-  </data>
-  <data name="&gt;&gt;buttonSelectWemosFirmware.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonSelectWemosFirmware.Parent" xml:space="preserve">
-    <value>panelFirmwareWemos</value>
-  </data>
-  <data name="&gt;&gt;buttonSelectWemosFirmware.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="labelWemosSelectFirmware.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="labelWemosSelectFirmware.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="&gt;&gt;buttonWemosDrivers.Parent" xml:space="preserve">
+    <value>panelFirmwareWemos</value>
+  </data>
+  <data name="&gt;&gt;buttonWemosDrivers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelTeensyCardModel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="labelWemosSelectFirmware.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 44</value>
+  <data name="&gt;&gt;labelCardType.Name" xml:space="preserve">
+    <value>labelCardType</value>
   </data>
-  <data name="labelWemosSelectFirmware.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 13</value>
+  <data name="buttonWemosDrivers.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="labelWemosSelectFirmware.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;panelFirmwareWemos.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="labelWemosSelectFirmware.Text" xml:space="preserve">
-    <value>Select a firmware</value>
+  <data name="&gt;&gt;buttonResetWemos.Name" xml:space="preserve">
+    <value>buttonResetWemos</value>
   </data>
-  <data name="&gt;&gt;labelWemosSelectFirmware.Name" xml:space="preserve">
-    <value>labelWemosSelectFirmware</value>
+  <data name="buttonWemosFlashFirmware.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;labelWemosSelectFirmware.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelWemosSelectFirmware.Parent" xml:space="preserve">
+  <data name="labelTeensySelectFirmware.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="buttonWemosFlashFirmware.Text" xml:space="preserve">
+    <value>Upload firmware</value>
+  </data>
+  <data name="&gt;&gt;panelFirmwareTeensy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonWemosDrivers.Text" xml:space="preserve">
+    <value>Windows Drivers</value>
+  </data>
+  <data name="&gt;&gt;buttonDirectOutput.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonWemosDrivers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 23</value>
+  </data>
+  <data name="comboBoxCards.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="comboBoxWemosCards.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 21</value>
+  </data>
+  <data name="buttonDirectOutput.Text" xml:space="preserve">
+    <value>Modified DirectOutput.DLL</value>
+  </data>
+  <data name="&gt;&gt;labelWemosComPort.Name" xml:space="preserve">
+    <value>labelWemosComPort</value>
+  </data>
+  <data name="panelFirmwareTeensy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="comboBoxCards.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 21</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTeensyCardModels.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxTeensyFirmware.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;comboBoxWemosCards.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="buttonResetWemos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;buttonSelectTeensyFirmware.Parent" xml:space="preserve">
+    <value>panelFirmwareTeensy</value>
+  </data>
+  <data name="labelTeensyCardModel.Text" xml:space="preserve">
+    <value>Select a card model</value>
+  </data>
+  <data name="buttonResetWemos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="labelTeensySelectFirmware.Text" xml:space="preserve">
+    <value>Select a firmware</value>
+  </data>
+  <data name="buttonTeensyUpload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 36</value>
+  </data>
+  <data name="&gt;&gt;buttonSelectWemosFirmware.Parent" xml:space="preserve">
     <value>panelFirmwareWemos</value>
   </data>
-  <data name="&gt;&gt;labelWemosSelectFirmware.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="buttonSelectWemosFirmware.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="textBoxWemosFirmwareName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="pictureBoxCard.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCards.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelWemosComPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 13</value>
+  </data>
+  <data name="&gt;&gt;textBoxWemosFirmwareName.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labelTeensySelectFirmware.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 39</value>
+  </data>
+  <data name="&gt;&gt;buttonWemosFlashFirmware.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panelFirmwareTeensy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>671, 110</value>
+  </data>
+  <data name="&gt;&gt;panelFirmwareTeensy.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonSelectWemosFirmware.Name" xml:space="preserve">
+    <value>buttonSelectWemosFirmware</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCards.Name" xml:space="preserve">
+    <value>comboBoxCards</value>
+  </data>
+  <data name="labelTeensySelectFirmware.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="labelCardType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="&gt;&gt;buttonDirectOutput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelWemosComPort.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;textBoxWemosFirmwareName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panelFirmwareWemos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 30</value>
+  </data>
+  <data name="&gt;&gt;buttonWemosFlashFirmware.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelCardType.Text" xml:space="preserve">
+    <value>Card type</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTeensyCardModels.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panelFirmwareWemos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="comboBoxTeensyCardModels.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
   <data name="textBoxWemosFirmwareName.Location" type="System.Drawing.Point, System.Drawing">
     <value>104, 41</value>
   </data>
-  <data name="textBoxWemosFirmwareName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>522, 20</value>
+  <data name="&gt;&gt;backgroundWorkerComPorts.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBoxWemosFirmwareName.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;buttonSelectTeensyFirmware.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBoxWemosFirmwareName.Name" xml:space="preserve">
-    <value>textBoxWemosFirmwareName</value>
-  </data>
-  <data name="&gt;&gt;textBoxWemosFirmwareName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxWemosFirmwareName.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonResetWemos.Parent" xml:space="preserve">
     <value>panelFirmwareWemos</value>
   </data>
-  <data name="&gt;&gt;textBoxWemosFirmwareName.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="comboBoxWemosCards.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
-  <data name="panelFirmwareWemos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 30</value>
-  </data>
-  <data name="panelFirmwareWemos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>671, 108</value>
-  </data>
-  <data name="panelFirmwareWemos.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;panelFirmwareWemos.Name" xml:space="preserve">
+  <data name="&gt;&gt;labelWemosComPort.Parent" xml:space="preserve">
     <value>panelFirmwareWemos</value>
   </data>
-  <data name="&gt;&gt;panelFirmwareWemos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelFirmwareWemos.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelFirmwareWemos.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="&gt;&gt;labelTeensyCardModel.Parent" xml:space="preserve">
+    <value>panelFirmwareTeensy</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>948, 562</value>
   </data>
-  <data name="&gt;&gt;backgroundWorkerComPorts.Name" xml:space="preserve">
-    <value>backgroundWorkerComPorts</value>
+  <data name="&gt;&gt;panelFirmwareWemos.Name" xml:space="preserve">
+    <value>panelFirmwareWemos</value>
   </data>
-  <data name="&gt;&gt;backgroundWorkerComPorts.Type" xml:space="preserve">
-    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="comboBoxTeensyCardModels.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 8</value>
+  </data>
+  <data name="textBoxWemosFirmwareName.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FirmwareFlashersTinyTool</value>
   </data>
+  <data name="&gt;&gt;comboBoxWemosCards.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxWemosCards.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panelFirmwareWemos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonSelectTeensyFirmware.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="labelTeensyCardModel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="labelTeensySelectFirmware.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCards.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="panelFirmwareTeensy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 32</value>
+  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>TinyTools.TinyToolUserControl, TinyTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
+  <data name="&gt;&gt;labelTeensyCardModel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelFirmwareTeensy.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTeensyCardModels.Parent" xml:space="preserve">
+    <value>panelFirmwareTeensy</value>
+  </data>
+  <data name="&gt;&gt;labelTeensySelectFirmware.Parent" xml:space="preserve">
+    <value>panelFirmwareTeensy</value>
+  </data>
+  <data name="&gt;&gt;comboBoxWemosCards.Parent" xml:space="preserve">
+    <value>panelFirmwareWemos</value>
+  </data>
+  <data name="labelWemosComPort.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelTeensyCardModel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="buttonDirectOutput.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;labelTeensySelectFirmware.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBoxTeensyCardModels.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 21</value>
+  </data>
+  <data name="textBoxTeensyFirmware.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;labelWemosSelectFirmware.Parent" xml:space="preserve">
+    <value>panelFirmwareWemos</value>
+  </data>
+  <data name="buttonTeensyUpload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCardType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonSelectWemosFirmware.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 23</value>
+  </data>
+  <data name="&gt;&gt;buttonDirectOutput.Parent" xml:space="preserve">
+    <value>panelFirmwareWemos</value>
+  </data>
+  <data name="&gt;&gt;labelCardType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonTeensyUpload.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;comboBoxWemosCards.Name" xml:space="preserve">
+    <value>comboBoxWemosCards</value>
+  </data>
+  <data name="buttonSelectWemosFirmware.Location" type="System.Drawing.Point, System.Drawing">
+    <value>632, 39</value>
+  </data>
+  <data name="comboBoxWemosCards.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 8</value>
+  </data>
+  <data name="&gt;&gt;backgroundWorkerComPorts.Name" xml:space="preserve">
+    <value>backgroundWorkerComPorts</value>
+  </data>
+  <data name="&gt;&gt;buttonDirectOutput.Name" xml:space="preserve">
+    <value>buttonDirectOutput</value>
+  </data>
+  <data name="textBoxWemosFirmwareName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="comboBoxTeensyCardModels.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="labelWemosComPort.Text" xml:space="preserve">
+    <value>Select a COM port</value>
+  </data>
+  <data name="panelFirmwareWemos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>671, 108</value>
+  </data>
+  <data name="buttonSelectTeensyFirmware.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelCardType.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelTeensySelectFirmware.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelWemosSelectFirmware.Name" xml:space="preserve">
+    <value>labelWemosSelectFirmware</value>
+  </data>
+  <data name="&gt;&gt;labelCardType.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="buttonWemosFlashFirmware.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 67</value>
+  </data>
+  <data name="&gt;&gt;textBoxTeensyFirmware.Name" xml:space="preserve">
+    <value>textBoxTeensyFirmware</value>
+  </data>
+  <data name="textBoxTeensyFirmware.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 20</value>
+  </data>
+  <data name="textBoxWemosFirmwareName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>522, 20</value>
+  </data>
+  <data name="buttonWemosFlashFirmware.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panelFirmwareWemos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonSelectTeensyFirmware.Name" xml:space="preserve">
+    <value>buttonSelectTeensyFirmware</value>
+  </data>
+  <data name="&gt;&gt;buttonResetWemos.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelWemosSelectFirmware.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 44</value>
+  </data>
+  <data name="buttonTeensyUpload.Text" xml:space="preserve">
+    <value>Upload firmware</value>
+  </data>
+  <data name="panelFirmwareTeensy.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;labelTeensyCardModel.Name" xml:space="preserve">
+    <value>labelTeensyCardModel</value>
+  </data>
+  <data name="pictureBoxCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 24</value>
+  </data>
+  <data name="&gt;&gt;labelWemosComPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonSelectWemosFirmware.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="buttonDirectOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 23</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCard.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelCardType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxWemosFirmwareName.Parent" xml:space="preserve">
+    <value>panelFirmwareWemos</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCard.Name" xml:space="preserve">
+    <value>pictureBoxCard</value>
+  </data>
+  <data name="&gt;&gt;buttonTeensyUpload.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="backgroundWorkerComPorts.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

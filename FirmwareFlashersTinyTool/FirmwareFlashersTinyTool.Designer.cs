@@ -41,6 +41,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
             this.labelTeensySelectFirmware = new System.Windows.Forms.Label();
             this.textBoxTeensyFirmware = new System.Windows.Forms.TextBox();
             this.panelFirmwareWemos = new System.Windows.Forms.Panel();
+            this.buttonWemosDrivers = new System.Windows.Forms.Button();
             this.buttonDirectOutput = new System.Windows.Forms.Button();
             this.buttonResetWemos = new System.Windows.Forms.Button();
             this.labelWemosComPort = new System.Windows.Forms.Label();
@@ -68,8 +69,8 @@ namespace TinyTools.FirmwareFlashersTinyTool
             // 
             // comboBoxCards
             // 
-            this.comboBoxCards.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxCards, "comboBoxCards");
+            this.comboBoxCards.FormattingEnabled = true;
             this.comboBoxCards.Name = "comboBoxCards";
             this.comboBoxCards.SelectedIndexChanged += new System.EventHandler(this.comboBoxCards_SelectedIndexChanged);
             // 
@@ -130,6 +131,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
             // panelFirmwareWemos
             // 
             resources.ApplyResources(this.panelFirmwareWemos, "panelFirmwareWemos");
+            this.panelFirmwareWemos.Controls.Add(this.buttonWemosDrivers);
             this.panelFirmwareWemos.Controls.Add(this.buttonDirectOutput);
             this.panelFirmwareWemos.Controls.Add(this.buttonResetWemos);
             this.panelFirmwareWemos.Controls.Add(this.labelWemosComPort);
@@ -140,6 +142,13 @@ namespace TinyTools.FirmwareFlashersTinyTool
             this.panelFirmwareWemos.Controls.Add(this.textBoxWemosFirmwareName);
             this.panelFirmwareWemos.Name = "panelFirmwareWemos";
             this.panelFirmwareWemos.VisibleChanged += new System.EventHandler(this.panelFirmwareWemos_VisibleChanged);
+            // 
+            // buttonWemosDrivers
+            // 
+            resources.ApplyResources(this.buttonWemosDrivers, "buttonWemosDrivers");
+            this.buttonWemosDrivers.Name = "buttonWemosDrivers";
+            this.buttonWemosDrivers.UseVisualStyleBackColor = true;
+            this.buttonWemosDrivers.Click += new System.EventHandler(this.buttonWemosDrivers_Click);
             // 
             // buttonDirectOutput
             // 
@@ -235,5 +244,6 @@ namespace TinyTools.FirmwareFlashersTinyTool
         private System.Windows.Forms.Label labelTeensyCardModel;
         private System.Windows.Forms.ComboBox comboBoxTeensyCardModels;
         private System.Windows.Forms.Button buttonDirectOutput;
+        private System.Windows.Forms.Button buttonWemosDrivers;
     }
 }
