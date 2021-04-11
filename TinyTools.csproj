@@ -42,6 +42,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DofChecklistTinyTool\DofChecklistResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DofChecklistResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DofChecklistTinyTool\DofChecklistResources.fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DofChecklistResources.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DofChecklistTinyTool\DofCheck\DirectOutput\DofCheck_GlobalConfig.cs" />
+    <Compile Include="DofChecklistTinyTool\DofCheck\DofChecklistResult.cs" />
+    <Compile Include="DofChecklistTinyTool\DofChecklistTinyTool.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DofChecklistTinyTool\DofChecklistTinyTool.Designer.cs">
+      <DependentUpon>DofChecklistTinyTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DofChecklistTinyTool\DofCheck\DofCheckPass.cs" />
+    <Compile Include="DofChecklistTinyTool\DofCheck\DirectOutput\GlobalConfigCheck.cs" />
     <Compile Include="EmptyTinyTool\EmptyTinyTool.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -85,6 +105,20 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DofChecklistTinyTool\DofChecklistResources.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DofChecklistResources.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DofChecklistTinyTool\DofChecklistResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DofChecklistResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DofChecklistTinyTool\DofChecklistTinyTool.fr.resx">
+      <DependentUpon>DofChecklistTinyTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DofChecklistTinyTool\DofChecklistTinyTool.resx">
+      <DependentUpon>DofChecklistTinyTool.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmptyTinyTool\EmptyTinyTool.fr.resx">
       <DependentUpon>EmptyTinyTool.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +153,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="DofChecklistTinyTool\ResultOk.png" />
+    <None Include="DofChecklistTinyTool\ResultFail.png" />
+    <None Include="DofChecklistTinyTool\ResultWarning.png" />
     <Content Include="FirmwareFlashersTinyTool\images\teensy32.png" />
     <Content Include="FirmwareFlashersTinyTool\images\teensy40.png" />
     <Content Include="FirmwareFlashersTinyTool\images\wemosd1minipro.png" />
