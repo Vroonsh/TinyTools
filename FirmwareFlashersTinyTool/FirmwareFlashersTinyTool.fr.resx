@@ -118,12 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="comboBoxCards.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 0</value>
-  </data>
-  <data name="comboBoxCards.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 21</value>
-  </data>
   <data name="labelCardType.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 13</value>
   </data>
@@ -136,12 +130,6 @@
   <data name="labelTeensyCardModel.Text" xml:space="preserve">
     <value>Sélectionez un modèle de carte</value>
   </data>
-  <data name="comboBoxTeensyCardModels.Location" type="System.Drawing.Point, System.Drawing">
-    <value>169, 8</value>
-  </data>
-  <data name="comboBoxTeensyCardModels.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 21</value>
-  </data>
   <data name="buttonTeensyUpload.Text" xml:space="preserve">
     <value>Téléverser firmware</value>
   </data>
@@ -151,14 +139,29 @@
   <data name="labelTeensySelectFirmware.Text" xml:space="preserve">
     <value>Sélectionez un firmware</value>
   </data>
+  <data name="checkBoxTestSwitch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 17</value>
+  </data>
+  <data name="checkBoxTestSwitch.Text" xml:space="preserve">
+    <value>Bouton test sur D0 (seulement si câblé)</value>
+  </data>
+  <data name="checkBoxTestOnReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 17</value>
+  </data>
+  <data name="checkBoxTestOnReset.Text" xml:space="preserve">
+    <value>Test RGB au boot</value>
+  </data>
+  <data name="checkBoxActivityLed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 17</value>
+  </data>
+  <data name="checkBoxActivityLed.Text" xml:space="preserve">
+    <value>Led d'activité (ne pas utiliser D4 si actif, interférences possibles)</value>
+  </data>
   <data name="buttonWemosDrivers.Text" xml:space="preserve">
     <value>Pilotes Windows</value>
   </data>
   <data name="buttonDirectOutput.Text" xml:space="preserve">
     <value>DirectOutput.DLL modifiée</value>
-  </data>
-  <data name="buttonResetWemos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 71</value>
   </data>
   <data name="buttonResetWemos.Text" xml:space="preserve">
     <value>Effacer firmware</value>
@@ -169,31 +172,13 @@
   <data name="labelWemosComPort.Text" xml:space="preserve">
     <value>Sélectionez un port COM</value>
   </data>
-  <data name="buttonWemosFlashFirmware.Location" type="System.Drawing.Point, System.Drawing">
-    <value>520, 71</value>
-  </data>
   <data name="buttonWemosFlashFirmware.Text" xml:space="preserve">
     <value>Téléverser firmware</value>
-  </data>
-  <data name="comboBoxWemosCards.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 8</value>
-  </data>
-  <data name="comboBoxWemosCards.Size" type="System.Drawing.Size, System.Drawing">
-    <value>522, 21</value>
   </data>
   <data name="labelWemosSelectFirmware.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 13</value>
   </data>
   <data name="labelWemosSelectFirmware.Text" xml:space="preserve">
     <value>Sélectionez un firmware</value>
-  </data>
-  <data name="textBoxWemosFirmwareName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 41</value>
-  </data>
-  <data name="textBoxWemosFirmwareName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 20</value>
-  </data>
-  <data name="panelFirmwareWemos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>671, 112</value>
   </data>
 </root>

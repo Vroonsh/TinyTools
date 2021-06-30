@@ -118,7 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DirectOutput.Message" xml:space="preserve">
-    <value>Vous allez devoir copier cette DLL modifiée dans votre répertoire DirectOutput pour faire fonctionner le Dof avec ces firmwares.
+    <value>ATTENTION !! Vérifiez bien si la version R3++ officielle est à jour avec cette DLL (si elle est plus récente elle est surement à jour), il vaut mieux avoir la version officielle.
+
+Sinon, copiez cette DLL modifiée dans votre répertoire DirectOutput pour faire fonctionner le Dof avec ces firmwares.
 Ne faites pas une copie de l'ancienne version et refaite bien le RegisterDirectOutputComObject.
 Cette DLL est basée sur la dernière version de DirectOutput Mjr R3++ Unified version.</value>
   </data>

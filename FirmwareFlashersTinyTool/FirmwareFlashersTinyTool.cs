@@ -186,11 +186,27 @@ namespace TinyTools.FirmwareFlashersTinyTool
 
         private void buttonWemosUpload_Click(object sender, EventArgs e)
         {
+            //Create Settings
+            byte[] settings = {
+                (byte)(checkBoxTestOnReset.Checked ? 1 : 0),
+                (byte)(checkBoxTestSwitch.Checked ? 1 : 0),
+                (byte)(checkBoxActivityLed.Checked ? 1 : 0),
+                0,
+                0,
+                0,
+                0,
+                0
+            };
+
+            var settingFileName = Path.Combine(Application.StartupPath, "wemos\\settings.bin");
+            var settingFile = File.OpenWrite(settingFileName);
+            settingFile.Write(settings, 0, settings.Length * sizeof(byte));
+            settingFile.Close();
+
             var esptoolProcess = new Process() {
                 StartInfo = new ProcessStartInfo() {
                     FileName = Path.Combine(Application.StartupPath, "wemos\\esptool.exe"),
-                    Arguments = $"-cp {comboBoxWemosCards.Text} -cd nodemcu -cb 921600 -cf \"{textBoxWemosFirmwareName.Text}\""
-                }
+                    Arguments = $"-cp {comboBoxWemosCards.Text} -cd nodemcu -cb 921600 -cf \"{textBoxWemosFirmwareName.Text}\" -ca 0x3fb000 -cf \"{settingFileName}\" -v"}
             };
 
             buttonResetWemos.Enabled = false;
@@ -203,7 +219,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
                         Thread.Sleep(100);
                     }
                     if (esptoolProcess.ExitCode != 0) {
-                        MessageBox.Show(FirmwareFlashersResources.FlashError_Message, FirmwareFlashersResources.FlashError_Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show($"{FirmwareFlashersResources.FlashError_Message}\nExit Code : {esptoolProcess.ExitCode}", FirmwareFlashersResources.FlashError_Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 } catch {
                 }
@@ -234,8 +250,9 @@ namespace TinyTools.FirmwareFlashersTinyTool
 
         private void buttonDirectOutput_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(FirmwareFlashersResources.DirectOutput_Message, FirmwareFlashersResources.DirectOutput_Title);
-            Process.Start("explorer.exe", Path.Combine(Application.StartupPath, "wemos\\modified directoutput"));
+            if (MessageBox.Show(FirmwareFlashersResources.DirectOutput_Message, FirmwareFlashersResources.DirectOutput_Title, MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK) {
+                Process.Start("explorer.exe", Path.Combine(Application.StartupPath, "wemos\\modified directoutput"));
+            }
         }
 
         private void buttonWemosDrivers_Click(object sender, EventArgs e)

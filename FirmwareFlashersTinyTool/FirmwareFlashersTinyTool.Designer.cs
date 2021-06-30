@@ -41,6 +41,9 @@ namespace TinyTools.FirmwareFlashersTinyTool
             this.labelTeensySelectFirmware = new System.Windows.Forms.Label();
             this.textBoxTeensyFirmware = new System.Windows.Forms.TextBox();
             this.panelFirmwareWemos = new System.Windows.Forms.Panel();
+            this.checkBoxTestSwitch = new System.Windows.Forms.CheckBox();
+            this.checkBoxTestOnReset = new System.Windows.Forms.CheckBox();
+            this.checkBoxActivityLed = new System.Windows.Forms.CheckBox();
             this.buttonWemosDrivers = new System.Windows.Forms.Button();
             this.buttonDirectOutput = new System.Windows.Forms.Button();
             this.buttonResetWemos = new System.Windows.Forms.Button();
@@ -69,8 +72,8 @@ namespace TinyTools.FirmwareFlashersTinyTool
             // 
             // comboBoxCards
             // 
-            resources.ApplyResources(this.comboBoxCards, "comboBoxCards");
             this.comboBoxCards.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxCards, "comboBoxCards");
             this.comboBoxCards.Name = "comboBoxCards";
             this.comboBoxCards.SelectedIndexChanged += new System.EventHandler(this.comboBoxCards_SelectedIndexChanged);
             // 
@@ -131,6 +134,9 @@ namespace TinyTools.FirmwareFlashersTinyTool
             // panelFirmwareWemos
             // 
             resources.ApplyResources(this.panelFirmwareWemos, "panelFirmwareWemos");
+            this.panelFirmwareWemos.Controls.Add(this.checkBoxTestSwitch);
+            this.panelFirmwareWemos.Controls.Add(this.checkBoxTestOnReset);
+            this.panelFirmwareWemos.Controls.Add(this.checkBoxActivityLed);
             this.panelFirmwareWemos.Controls.Add(this.buttonWemosDrivers);
             this.panelFirmwareWemos.Controls.Add(this.buttonDirectOutput);
             this.panelFirmwareWemos.Controls.Add(this.buttonResetWemos);
@@ -142,6 +148,26 @@ namespace TinyTools.FirmwareFlashersTinyTool
             this.panelFirmwareWemos.Controls.Add(this.textBoxWemosFirmwareName);
             this.panelFirmwareWemos.Name = "panelFirmwareWemos";
             this.panelFirmwareWemos.VisibleChanged += new System.EventHandler(this.panelFirmwareWemos_VisibleChanged);
+            // 
+            // checkBoxTestSwitch
+            // 
+            resources.ApplyResources(this.checkBoxTestSwitch, "checkBoxTestSwitch");
+            this.checkBoxTestSwitch.Name = "checkBoxTestSwitch";
+            this.checkBoxTestSwitch.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTestOnReset
+            // 
+            resources.ApplyResources(this.checkBoxTestOnReset, "checkBoxTestOnReset");
+            this.checkBoxTestOnReset.Name = "checkBoxTestOnReset";
+            this.checkBoxTestOnReset.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxActivityLed
+            // 
+            resources.ApplyResources(this.checkBoxActivityLed, "checkBoxActivityLed");
+            this.checkBoxActivityLed.Checked = true;
+            this.checkBoxActivityLed.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxActivityLed.Name = "checkBoxActivityLed";
+            this.checkBoxActivityLed.UseVisualStyleBackColor = true;
             // 
             // buttonWemosDrivers
             // 
@@ -204,8 +230,8 @@ namespace TinyTools.FirmwareFlashersTinyTool
             // FirmwareFlashersTinyTool
             // 
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.panelFirmwareWemos);
             this.Controls.Add(this.panelFirmwareTeensy);
+            this.Controls.Add(this.panelFirmwareWemos);
             this.Controls.Add(this.pictureBoxCard);
             this.Controls.Add(this.comboBoxCards);
             this.Controls.Add(this.labelCardType);
@@ -245,5 +271,8 @@ namespace TinyTools.FirmwareFlashersTinyTool
         private System.Windows.Forms.ComboBox comboBoxTeensyCardModels;
         private System.Windows.Forms.Button buttonDirectOutput;
         private System.Windows.Forms.Button buttonWemosDrivers;
+        private System.Windows.Forms.CheckBox checkBoxTestSwitch;
+        private System.Windows.Forms.CheckBox checkBoxTestOnReset;
+        private System.Windows.Forms.CheckBox checkBoxActivityLed;
     }
 }

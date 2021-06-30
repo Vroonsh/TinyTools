@@ -76,7 +76,9 @@ namespace TinyTools.FirmwareFlashersTinyTool {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You&apos;ll have to copy this modified DirectOutput.DLL to your DirectOutput directory to match these Wemos firmwares.
+        ///   Looks up a localized string similar to WARNING ! Please check first if the latest R3++ is up to date with this version (if it&apos;s newer it&apos;s probably up to date), prefer the official version.
+        ///
+        ///Otherwize, copy this modified DirectOutput.DLL to your DirectOutput directory to match these Wemos firmwares.
         ///Don&apos;t do a copy of the previous one and redo a RegisterDirectOutputComObject.
         ///This DLL is based on the last version of Mrj R3++ unified version..
         /// </summary>

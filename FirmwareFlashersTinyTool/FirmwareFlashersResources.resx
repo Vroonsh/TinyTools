@@ -127,7 +127,9 @@ https://github.com/PaulStoffregen/teensy_loader_cli
 </value>
   </data>
   <data name="DirectOutput.Message" xml:space="preserve">
-    <value>You'll have to copy this modified DirectOutput.DLL to your DirectOutput directory to match these Wemos firmwares.
+    <value>WARNING ! Please check first if the latest R3++ is up to date with this version (if it's newer it's probably up to date), prefer the official version.
+
+Otherwize, copy this modified DirectOutput.DLL to your DirectOutput directory to match these Wemos firmwares.
 Don't do a copy of the previous one and redo a RegisterDirectOutputComObject.
 This DLL is based on the last version of Mrj R3++ unified version.</value>
   </data>
