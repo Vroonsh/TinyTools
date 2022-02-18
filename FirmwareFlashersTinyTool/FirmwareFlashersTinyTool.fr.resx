@@ -139,6 +139,21 @@
   <data name="labelTeensySelectFirmware.Text" xml:space="preserve">
     <value>Sélectionez un firmware</value>
   </data>
+  <data name="comboBoxFlashSize.Items" xml:space="preserve">
+    <value>4 MO (defaut)</value>
+  </data>
+  <data name="comboBoxFlashSize.Items1" xml:space="preserve">
+    <value>8 MO</value>
+  </data>
+  <data name="comboBoxFlashSize.Items2" xml:space="preserve">
+    <value>16 MO</value>
+  </data>
+  <data name="labelWemosSelectSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 13</value>
+  </data>
+  <data name="labelWemosSelectSize.Text" xml:space="preserve">
+    <value>Sélectionnez taille de flashage</value>
+  </data>
   <data name="checkBoxTestSwitch.Size" type="System.Drawing.Size, System.Drawing">
     <value>210, 17</value>
   </data>

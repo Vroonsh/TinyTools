@@ -52,6 +52,10 @@ namespace TinyTools.FirmwareFlashersTinyTool
             comboBoxCards.DataSource = Enum.GetValues(typeof(CardTypeEnum));
             comboBoxCards.SelectedItem = CurrentCardType;
             UpdateCurrentCardType();
+            comboBoxFlashSize.SelectedIndex = 0;
+
+            buttonDirectOutput.Hide();
+            buttonDirectOutput.Enabled = false;
         }
 
         private void FirmwareFlashersTinyTool_ControlRemoved(object sender, ControlEventArgs e)
@@ -184,6 +188,8 @@ namespace TinyTools.FirmwareFlashersTinyTool
 
         }
 
+        private readonly string[] wemosFlashOffset = { "0x3FB000" , "0x7FB000", "0x17FB000" };
+
         private void buttonWemosUpload_Click(object sender, EventArgs e)
         {
             //Create Settings
@@ -198,7 +204,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
                 0
             };
 
-            var settingFileName = Path.Combine(Application.StartupPath, "wemos\\settings.bin");
+            var settingFileName = Path.Combine(Application.CommonAppDataPath, "wemos\\settings.bin");
             var settingFile = File.OpenWrite(settingFileName);
             settingFile.Write(settings, 0, settings.Length * sizeof(byte));
             settingFile.Close();
@@ -206,7 +212,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
             var esptoolProcess = new Process() {
                 StartInfo = new ProcessStartInfo() {
                     FileName = Path.Combine(Application.StartupPath, "wemos\\esptool.exe"),
-                    Arguments = $"-cp {comboBoxWemosCards.Text} -cd nodemcu -cb 921600 -cf \"{textBoxWemosFirmwareName.Text}\" -ca 0x3fb000 -cf \"{settingFileName}\" -v"}
+                    Arguments = $"-cp {comboBoxWemosCards.Text} -cd nodemcu -cb 921600 -cf \"{textBoxWemosFirmwareName.Text}\" -ca {wemosFlashOffset[comboBoxFlashSize.SelectedIndex]} -cf \"{settingFileName}\" -v"}
             };
 
             buttonResetWemos.Enabled = false;
@@ -345,6 +351,5 @@ namespace TinyTools.FirmwareFlashersTinyTool
             buttonTeensyUpload.Enabled = true;
         }
         #endregion
-
     }
 }

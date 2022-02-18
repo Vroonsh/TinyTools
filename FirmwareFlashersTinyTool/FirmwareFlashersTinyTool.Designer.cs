@@ -41,6 +41,8 @@ namespace TinyTools.FirmwareFlashersTinyTool
             this.labelTeensySelectFirmware = new System.Windows.Forms.Label();
             this.textBoxTeensyFirmware = new System.Windows.Forms.TextBox();
             this.panelFirmwareWemos = new System.Windows.Forms.Panel();
+            this.comboBoxFlashSize = new System.Windows.Forms.ComboBox();
+            this.labelWemosSelectSize = new System.Windows.Forms.Label();
             this.checkBoxTestSwitch = new System.Windows.Forms.CheckBox();
             this.checkBoxTestOnReset = new System.Windows.Forms.CheckBox();
             this.checkBoxActivityLed = new System.Windows.Forms.CheckBox();
@@ -72,8 +74,8 @@ namespace TinyTools.FirmwareFlashersTinyTool
             // 
             // comboBoxCards
             // 
-            this.comboBoxCards.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxCards, "comboBoxCards");
+            this.comboBoxCards.FormattingEnabled = true;
             this.comboBoxCards.Name = "comboBoxCards";
             this.comboBoxCards.SelectedIndexChanged += new System.EventHandler(this.comboBoxCards_SelectedIndexChanged);
             // 
@@ -134,6 +136,8 @@ namespace TinyTools.FirmwareFlashersTinyTool
             // panelFirmwareWemos
             // 
             resources.ApplyResources(this.panelFirmwareWemos, "panelFirmwareWemos");
+            this.panelFirmwareWemos.Controls.Add(this.comboBoxFlashSize);
+            this.panelFirmwareWemos.Controls.Add(this.labelWemosSelectSize);
             this.panelFirmwareWemos.Controls.Add(this.checkBoxTestSwitch);
             this.panelFirmwareWemos.Controls.Add(this.checkBoxTestOnReset);
             this.panelFirmwareWemos.Controls.Add(this.checkBoxActivityLed);
@@ -148,6 +152,21 @@ namespace TinyTools.FirmwareFlashersTinyTool
             this.panelFirmwareWemos.Controls.Add(this.textBoxWemosFirmwareName);
             this.panelFirmwareWemos.Name = "panelFirmwareWemos";
             this.panelFirmwareWemos.VisibleChanged += new System.EventHandler(this.panelFirmwareWemos_VisibleChanged);
+            // 
+            // comboBoxFlashSize
+            // 
+            resources.ApplyResources(this.comboBoxFlashSize, "comboBoxFlashSize");
+            this.comboBoxFlashSize.FormattingEnabled = true;
+            this.comboBoxFlashSize.Items.AddRange(new object[] {
+            resources.GetString("comboBoxFlashSize.Items"),
+            resources.GetString("comboBoxFlashSize.Items1"),
+            resources.GetString("comboBoxFlashSize.Items2")});
+            this.comboBoxFlashSize.Name = "comboBoxFlashSize";
+            // 
+            // labelWemosSelectSize
+            // 
+            resources.ApplyResources(this.labelWemosSelectSize, "labelWemosSelectSize");
+            this.labelWemosSelectSize.Name = "labelWemosSelectSize";
             // 
             // checkBoxTestSwitch
             // 
@@ -230,8 +249,8 @@ namespace TinyTools.FirmwareFlashersTinyTool
             // FirmwareFlashersTinyTool
             // 
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.panelFirmwareTeensy);
             this.Controls.Add(this.panelFirmwareWemos);
+            this.Controls.Add(this.panelFirmwareTeensy);
             this.Controls.Add(this.pictureBoxCard);
             this.Controls.Add(this.comboBoxCards);
             this.Controls.Add(this.labelCardType);
@@ -274,5 +293,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
         private System.Windows.Forms.CheckBox checkBoxTestSwitch;
         private System.Windows.Forms.CheckBox checkBoxTestOnReset;
         private System.Windows.Forms.CheckBox checkBoxActivityLed;
+        private System.Windows.Forms.ComboBox comboBoxFlashSize;
+        private System.Windows.Forms.Label labelWemosSelectSize;
     }
 }
