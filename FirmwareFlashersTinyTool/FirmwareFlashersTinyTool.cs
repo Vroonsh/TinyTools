@@ -56,6 +56,8 @@ namespace TinyTools.FirmwareFlashersTinyTool
 
             buttonDirectOutput.Hide();
             buttonDirectOutput.Enabled = false;
+
+
         }
 
         private void FirmwareFlashersTinyTool_ControlRemoved(object sender, ControlEventArgs e)
@@ -105,8 +107,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
         #region Wemos Panel
         private void UpdateWemosButtonState()
         {
-            buttonResetWemos.Enabled = comboBoxWemosCards.SelectedIndex >= 0 &&
-                                       comboBoxWemosCards.Text != string.Empty;
+            buttonResetWemos.Enabled = comboBoxWemosCards.SelectedIndex >= 0;
             buttonWemosFlashFirmware.Enabled = buttonResetWemos.Enabled && textBoxWemosFirmwareName.Text != string.Empty;
         }
 
@@ -125,19 +126,26 @@ namespace TinyTools.FirmwareFlashersTinyTool
 
         private delegate void UpdateComPortsDelegate();
         private UpdateComPortsDelegate updateComPorts;
-        private string[] ComPorts = new string[0];
+        private List<string> ComPorts = new List<string>();
 
         private void UpdateComPorts()
         {
             Application.DoEvents();
             var comPorts = SerialPort.GetPortNames();
             if (!comPorts.SequenceEqual(ComPorts)) {
-                ComPorts = new string[comPorts.Length];
-                comPorts.CopyTo(ComPorts, 0);
+                ComPorts.Clear();
+                if (comPorts.Length > 0) {
+                    ComPorts.AddRange(comPorts);
+                }
                 comboBoxWemosCards.Items.Clear();
-                comboBoxWemosCards.Items.AddRange(ComPorts);
-                comboBoxWemosCards.SelectedIndex = -1;
-                comboBoxWemosCards.Text = "";
+                if (ComPorts.Count > 0) {
+                    comboBoxWemosCards.Items.Add("[Auto]");
+                    comboBoxWemosCards.Items.AddRange(ComPorts.ToArray());
+                }
+                comboBoxWemosCards.SelectedIndex = comboBoxWemosCards.Items.Count > 0 ? 0 : -1;
+                if (comboBoxWemosCards.SelectedIndex < 0) {
+                    comboBoxWemosCards.Text = string.Empty;
+                }
                 UpdateWemosButtonState();
             }
         }
@@ -163,7 +171,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
             var esptoolProcess = new Process() {
                 StartInfo = new ProcessStartInfo() {
                     FileName = Path.Combine(Application.StartupPath, "wemos\\esptool.exe"),
-                    Arguments = $"-cp {comboBoxWemosCards.Text} -cd nodemcu -ce"
+                    Arguments = $"erase_flash"
                 }
             };
 
@@ -188,7 +196,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
 
         }
 
-        private readonly string[] wemosFlashOffset = { "0x3FB000" , "0x7FB000", "0x17FB000" };
+        private readonly string[] wemosFlashOffset = { "0x3FB000" , "0x7FB000", "0xFFB000" };
 
         private void buttonWemosUpload_Click(object sender, EventArgs e)
         {
@@ -204,15 +212,17 @@ namespace TinyTools.FirmwareFlashersTinyTool
                 0
             };
 
-            var settingFileName = Path.Combine(Application.CommonAppDataPath, "wemos\\settings.bin");
+            var settingFileName = Path.Combine(Application.CommonAppDataPath, "wemos_settings.bin");
             var settingFile = File.OpenWrite(settingFileName);
             settingFile.Write(settings, 0, settings.Length * sizeof(byte));
             settingFile.Close();
 
+            var arguments = $"{(comboBoxWemosCards.SelectedIndex > 0 ? $"-p {comboBoxWemosCards.Text}" : "")} -b 921600 --before default_reset --after hard_reset write_flash 0x00000000 \"{textBoxWemosFirmwareName.Text}\" {wemosFlashOffset[comboBoxFlashSize.SelectedIndex]} \"{settingFileName}\"";
             var esptoolProcess = new Process() {
                 StartInfo = new ProcessStartInfo() {
                     FileName = Path.Combine(Application.StartupPath, "wemos\\esptool.exe"),
-                    Arguments = $"-cp {comboBoxWemosCards.Text} -cd nodemcu -cb 921600 -cf \"{textBoxWemosFirmwareName.Text}\" -ca {wemosFlashOffset[comboBoxFlashSize.SelectedIndex]} -cf \"{settingFileName}\" -v"}
+                    Arguments = arguments
+                }
             };
 
             buttonResetWemos.Enabled = false;

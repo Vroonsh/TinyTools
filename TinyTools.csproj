@@ -52,7 +52,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DofChecklistResources.fr.resx</DependentUpon>
     </Compile>
+    <Compile Include="DofChecklistTinyTool\DofCheck\DofCheckSection.cs" />
+    <Compile Include="DofChecklistTinyTool\DofCheck\DirectOutput\DofCheck_DofConfigToolFiles.cs" />
     <Compile Include="DofChecklistTinyTool\DofCheck\DirectOutput\DofCheck_GlobalConfig.cs" />
+    <Compile Include="DofChecklistTinyTool\DofCheck\DirectOutput\DofCheck_GlobalConfigReferences.cs" />
     <Compile Include="DofChecklistTinyTool\DofCheck\DofChecklistResult.cs" />
     <Compile Include="DofChecklistTinyTool\DofChecklistTinyTool.cs">
       <SubType>UserControl</SubType>

@@ -74,8 +74,8 @@ namespace TinyTools.FirmwareFlashersTinyTool
             // 
             // comboBoxCards
             // 
-            resources.ApplyResources(this.comboBoxCards, "comboBoxCards");
             this.comboBoxCards.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxCards, "comboBoxCards");
             this.comboBoxCards.Name = "comboBoxCards";
             this.comboBoxCards.SelectedIndexChanged += new System.EventHandler(this.comboBoxCards_SelectedIndexChanged);
             // 
@@ -171,6 +171,8 @@ namespace TinyTools.FirmwareFlashersTinyTool
             // checkBoxTestSwitch
             // 
             resources.ApplyResources(this.checkBoxTestSwitch, "checkBoxTestSwitch");
+            this.checkBoxTestSwitch.Checked = true;
+            this.checkBoxTestSwitch.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxTestSwitch.Name = "checkBoxTestSwitch";
             this.checkBoxTestSwitch.UseVisualStyleBackColor = true;
             // 
