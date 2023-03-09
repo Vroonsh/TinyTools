@@ -1,4 +1,4 @@
-# TinyToolsFw
+# TinyTools
 A little Framework to create tools in .NET
 
 - Tiny tools tester app
