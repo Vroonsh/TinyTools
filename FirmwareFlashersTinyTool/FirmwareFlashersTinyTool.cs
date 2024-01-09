@@ -191,9 +191,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
                 }
             }
 
-            buttonResetWemos.Enabled = true;
-            buttonWemosFlashFirmware.Enabled = true;
-
+            UpdateWemosButtonState();
         }
 
         private readonly string[] wemosFlashOffset = { "0x3FB000" , "0x7FB000", "0xFFB000" };
@@ -241,8 +239,7 @@ namespace TinyTools.FirmwareFlashersTinyTool
                 }
             }
 
-            buttonResetWemos.Enabled = true;
-            buttonWemosFlashFirmware.Enabled = true;
+            UpdateWemosButtonState();
         }
 
         private void buttonWemosSelectFirmware_Click(object sender, EventArgs e)
@@ -361,5 +358,15 @@ namespace TinyTools.FirmwareFlashersTinyTool
             buttonTeensyUpload.Enabled = true;
         }
         #endregion
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSendCommand_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
